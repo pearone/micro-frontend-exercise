@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>single-spa</title>
+  </head>
+  <body>
+    <div id="react"></div>
+    <script src="/dist/main.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>single-spa</title>
+  </head>
+  <body>
+    <ul>
+    <button onclick="changeHref('vue')">vue</button>
+    <button onclick="changeHref('react')">react</button>
+    <button onclick="changeHref('home')">home</button>
+    <h1>hello, home</h1>
+    <h1 id="vue"></h1>
+    <h1 id="react"></h1>
+    <script>
+      const changeHref = (href) => {
+        window.location.href = `/${href}`;
+      }
+    </script>
+    <script src="/dist/main.js"></script>
+  </body>
+</html>
